@@ -1,0 +1,32 @@
+<!--BY SAMANTHA FERNANDEZ 07/13/2016-->
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Night and day jQuery project</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="daysky">
+
+    <div id="orb" class="sun"></div>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+
+    <script>
+      $("#orb").click(function(){
+        if ($("#orb").hasClass("sun")){
+          $("#orb").removeClass("sun").addClass("moon");
+          $("body").removeClass("daysky").addClass("darksky");
+        }
+        else{
+          $("#orb").removeClass("moon").addClass("sun");
+          $("body").removeClass("darksky").addClass("daysky");
+        }
+      });
+    </script>
+
+    </body>
+
+</html>

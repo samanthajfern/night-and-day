@@ -1,0 +1,23 @@
+#orb{
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  margin: 100px auto 0 auto;
+}
+
+.sun{
+  background: linear-gradient(to bottom right, red, yellow); /* Standard syntax */
+}
+.moon{
+  background: rgba(125,126,151,1);
+  background: linear-gradient(to right, rgba(125,126,151,1) 0%, rgba(24,21,117,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e97', endColorstr='#181575', GradientType=1 );
+}
+
+ .daysky{
+ background-color: gold;
+ }
+
+ .darksky{
+  background-color: navy !important;
+ }
